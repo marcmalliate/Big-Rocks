@@ -1,12 +1,13 @@
 import React from "react";
-import Rocks from "../components/Rocks/Rocks";
+import Rock from "../components/Rocks/Rocks";
 import { useQuery } from "@apollo/client";
 import { QUERY_ALL_ROCKS } from "../utils/queries";
+
 import { Row, Col } from "react-bootstrap";
 
-const Rocks = () => {
+const MyRocks = () => {
   const { loading, data } = useQuery(QUERY_ALL_ROCKS);
-  const rocks = data?.rocks || [];
+  const rock = data?.rock || [];
 
   return (
     <>
@@ -15,7 +16,7 @@ const Rocks = () => {
         {loading ? (
           <div> Loading</div>
         ) : (
-          rocks?.map((product) => (
+          rock?.map((rock) => (
             <Col key={rock.rock_id} sm={12} md={6} lg={4} ex={3}>
               <Rock rock={rock} />
             </Col>
@@ -26,4 +27,4 @@ const Rocks = () => {
   );
 };
 
-export default Rocks;
+export default MyRocks;

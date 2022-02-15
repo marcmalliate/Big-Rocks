@@ -54,7 +54,7 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/rocks" component={MyRocks} />
-              <Route exact path="/tasks" component={Jar} />
+              <Route exact path="/jar" component={Jar} />
             </Container>
           </main>
         </div>

@@ -1,0 +1,22 @@
+.nav-container {
+  background: rgb(168, 99, 50);
+}
+.bg-primary {
+  background-color: whitesmoke;
+}
+
+.m-0 {
+  color: rgb(248, 242, 189);
+}
+
+.btn.btn-info {
+  background-color: rgb(168, 99, 50);
+}
+
+.btn.btn-info:hover {
+  color: rgb(248, 242, 189);
+}
+
+.btn.btn-light {
+  background-color: rgb(248, 242, 189);
+}

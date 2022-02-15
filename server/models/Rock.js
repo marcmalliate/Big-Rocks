@@ -1,6 +1,6 @@
 const { Schema, model, DataTypes } = require("mongoose");
 
-console.log("start Rocks");
+console.log("start Rock");
 
 const rockSchema = new Schema({
   name: {
@@ -34,6 +34,6 @@ const rockSchema = new Schema({
 
 const Rock = model("Rock", rockSchema);
 
-console.log("End Rocks");
+console.log("End Rock");
 
 module.exports = Rock;

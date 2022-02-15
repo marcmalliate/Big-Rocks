@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import QUERY_ALL_ROCKS from "./utils/queries";
-import ADD_ROCK from "./utils/mutations";
+
 import "./Rocks.css";
 import { Link } from "react-router-dom";
 
@@ -20,7 +19,7 @@ const Rocks = ({ rock }) => {
         </Link>
 
         <Card.Text as="div">
-          <Rating value={rock.rockText} />
+          <light value={rock.rockText} />
         </Card.Text>
       </Card.Body>
     </Card>
