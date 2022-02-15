@@ -7,7 +7,7 @@ const Home = () => {
         <div className="home-para flex-row justifty-center">
           <br></br>
           This is the best tool<br></br>
-          To help you achieve your goals <br></br>
+          to help you achieve your goals <br></br>
           <br></br>
           <br></br>
         </div>

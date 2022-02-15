@@ -14,9 +14,20 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Jar from "./pages/Jar";
 import MyRocks from "./pages/MyRocks";
+import GetInspired from "./pages/GetInspired";
+import WhatAreBigRocks from "./pages/WhatAreBigRocks";
 //Import Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
+import Layout from "./components/MyJar/Layout";
+import Form from "./components/MyJar/Form";
+import JarHeader from "./components/MyJar/JarHeader";
+import ListItem from "./components/MyJar/ListItem";
+import Lists from "./components/MyJar/Lists";
+
+import Rock from "./components/Rock";
+import RockForm from "./components/RockForm";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -55,6 +66,12 @@ function App() {
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/rocks" component={MyRocks} />
               <Route exact path="/jar" component={Jar} />
+              <Route exact path="/getinspired" component={GetInspired} />
+              <Route
+                exact
+                path="/whatarebigrocks"
+                component={WhatAreBigRocks}
+              />
             </Container>
           </main>
         </div>
