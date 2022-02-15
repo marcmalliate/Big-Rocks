@@ -19,7 +19,7 @@ const taskSchema = new Schema({
   task_id: {
     type: Number,
     required: true,
-  }
+  },
 
   createdAt: {
     type: Date,

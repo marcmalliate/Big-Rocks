@@ -7,12 +7,16 @@
   {
     "username": "dory",
     "email": "dory@email.com",
-    "password": "password01"
+    "password": "password01",
+    "rock": "Get Fit",
+    "task": "Go to the gym."
   },
   {
     "username": "drew",
     "email": "drew@email.com",
-    "password": "password01"
+    "password": "password01",
+    "rock": "Learn Japanese",
+    "task": "Practice Japanese"
   },
   {
     "username": "portia",

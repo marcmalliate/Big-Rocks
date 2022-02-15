@@ -1,33 +1,37 @@
-import React from 'react';
+import React from "react";
+import { Container } from "react-bootstrap";
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import Home from './pages/Home';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
-import Header from './components/Header';
-import Footer from './components/Footer';
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+// Import Pages
+import Home from "./pages/Home";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import Jar from "./pages/Jar";
+import MyRocks from "./pages/MyRocks";
+//Import Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem('id_token');
+  const token = localStorage.getItem("id_token");
   // return the headers to the context so httpLink can read them
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : '',
+      authorization: token ? `Bearer ${token}` : "",
     },
   };
 });
@@ -44,19 +48,17 @@ function App() {
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
-          <div className="container">
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/signup">
-              <Signup />
-            </Route>
-          </div>
-          <Footer />
+          <main>
+            <Container>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/rocks" component={MyRocks} />
+              <Route exact path="/tasks" component={Jar} />
+            </Container>
+          </main>
         </div>
+        <Footer />
       </Router>
     </ApolloProvider>
   );

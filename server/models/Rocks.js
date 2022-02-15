@@ -18,7 +18,7 @@ const rockSchema = new Schema({
   rock_id: {
     type: Number,
     required: true,
-  }
+  },
 
   createdAt: {
     type: Date,

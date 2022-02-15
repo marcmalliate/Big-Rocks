@@ -17,7 +17,7 @@ const typeDefs = gql`
   }
 
   type Rock {
-   rock_id: ID
+    rock_id: ID
     name: String
     rockText: String
     createdAt: String
@@ -37,14 +37,14 @@ const typeDefs = gql`
     user(username: String!): User
     rocks(username: String): [Rock]
     rock(rock_id: ID!): Rock
-    tasks(username): String!: [Task]
+    tasks(username: String!): [Task]
     task(task_id: ID!): Task
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addRock(rockText: String!, user_id: ID!): Rock
+    addRock(name: String!, rockText: String!, user_id: ID!): Rock
     addTask(task: String!, user_id: ID!): Task
     removeRock(rock_id: ID!): Rock
     removeTask(task_id: ID!): Task

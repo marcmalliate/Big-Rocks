@@ -16,14 +16,14 @@ const resolvers = {
       const params = username ? { username } : {};
       return Rock.find(params).sort({ createdAt: -1 });
     },
-    Rock: async (parent, { rock_id }) => {
+    rock: async (parent, { rock_id }) => {
       return Rock.findOne({ user_id: rock_id });
     },
     tasks: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Task.find(params).sort({ createdAt: -1 });
     },
-    Task: async (parent, { task_id }) => {
+    task: async (parent, { task_id }) => {
       return Task.findOne({ user_id: task_id });
     },
   },

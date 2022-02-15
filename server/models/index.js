@@ -1,5 +1,5 @@
 const User = require("./User");
 const Rocks = require("./Rocks");
-const Task = require("./Task");
+const Tasks = require("./Tasks");
 
-module.exports = { User, Rocks, Task };
+module.exports = { User, Rocks, Tasks };

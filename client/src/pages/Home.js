@@ -1,10 +1,16 @@
-import React from 'react';
-
+import React from "react";
+import "./Home.css";
 const Home = () => {
-
   return (
     <main>
-      <div className="flex-row justify-center">
+      <div className="hero-background">
+        <div className="hero-para flex-row justifty-center">
+          <br></br>
+          This is the best tool<br></br>
+          To help you achieve your goals <br></br>
+          <br></br>
+          <br></br>
+        </div>
       </div>
     </main>
   );
