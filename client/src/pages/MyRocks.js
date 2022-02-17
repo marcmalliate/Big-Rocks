@@ -3,6 +3,7 @@ import RockForm from "../components/Rock/RockForm";
 import RockHeader from "../components/Rock/RockHeader";
 import RockLayout from "../components/Rock/RockLayout";
 import RockLists from "../components/Rock/RockLists";
+import "./MyRocks.css";
 
 import { Container } from "react-bootstrap";
 
@@ -36,7 +37,7 @@ const MyRocks = () => {
   };
 
   const delHandler = (rockId) => {
-    if (window.confirm("Are you sure")) {
+    if (window.confirm("Are you sure you want to delete this rock?")) {
       const updatedRocks = rocks.filter((item) => item.id !== rockId);
 
       setRocks(updatedRocks);
