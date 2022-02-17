@@ -40,6 +40,7 @@ function RockList() {
   const [error, setError] = useState(null);
   const [rocks, setRocks] = useState([]);
 
+  // NEED TO ADD LOCAL STORAGE!!!
   // useEffect(() => {
   //   const storedRocks = JSON.parse(localStorage.getItem("rock"));
   //   if (storedRocks) setRocks(storedRocks);
