@@ -26,9 +26,6 @@ import JarHeader from "./components/MyJar/JarHeader";
 import ListItem from "./components/MyJar/ListItem";
 import Lists from "./components/MyJar/Lists";
 
-import Rock from "./components/Rock";
-import RockForm from "./components/RockForm";
-
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: "/graphql",

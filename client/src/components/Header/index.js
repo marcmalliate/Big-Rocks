@@ -30,9 +30,13 @@ const Header = () => {
                 My Rocks
               </Link>
               <span>Hiya, {Auth.getProfile().data.username}!</span>
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+              <Link
+                to="/"
+                className="btn btn-lg btn-light m-2"
+                onClick={logout}
+              >
                 Logout
-              </button>
+              </Link>
             </>
           ) : (
             <>

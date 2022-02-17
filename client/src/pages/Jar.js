@@ -3,7 +3,8 @@ import Form from "../components/MyJar/Form";
 import Header from "../components/MyJar/JarHeader";
 import Layout from "../components/MyJar/Layout";
 import Lists from "../components/MyJar/Lists";
-import Rock from "../components/Rock";
+
+import { Container } from "react-bootstrap";
 
 const Jar = () => {
   const [error, setError] = useState(null);
