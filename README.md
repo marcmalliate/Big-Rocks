@@ -37,6 +37,8 @@ Once this has complete, enter `npm run build` this will allow the application to
 ## Usage
 
 To use the app you may simply use the deployed link.<br />
+https://big-rocks-dream-and-achieve.herokuapp.com/ <br />
+<br />
 From here you can navigate through the website, learn about what your Big Rocks are.<br />
 You may then sign up to create your Big Rocks and use the daily task manager.<br />
 
@@ -51,7 +53,8 @@ This application has the following license:
 
 ## Contributing
 
-Please email me to discuss further.
+Please email me to discuss further. <br />
+(https://github.com/marcmalliate)
 
 <br />
 
@@ -104,7 +107,7 @@ Adding to My Jar:
 
 <br />
 
-To view and test the deployed app visit (not loading yet) : https://book-search-engine-1.herokuapp.com/
+To view and test the deployed app visit : https://big-rocks-dream-and-achieve.herokuapp.com/
 
 <br />
 
