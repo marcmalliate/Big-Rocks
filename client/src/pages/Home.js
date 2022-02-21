@@ -10,6 +10,9 @@ const Home = () => {
           to help you achieve your goals <br></br>
           <br></br>
           <br></br>
+          So let's get started...
+          <br></br>
+          <br></br>
         </div>
       </div>
     </main>
