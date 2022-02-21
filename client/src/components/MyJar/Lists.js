@@ -12,22 +12,24 @@ const Lists = ({ todos, delHandler, doneHandler }) => {
   }
 
   return (
-    <div className="listWrap">
-      <ul className="list-group">
-        {todos &&
-          todos.length > 0 &&
-          todos.map((todo) => (
-            <ListItem
-              key={todo.id}
-              id={todo.id}
-              title={todo.title}
-              done={todo.done}
-              delHandler={delHandler}
-              doneHandler={doneHandler}
-            />
-          ))}
-      </ul>
-    </div>
+    <span className="font-link">
+      <div className="listWrap">
+        <ul className="list-group">
+          {todos &&
+            todos.length > 0 &&
+            todos.map((todo) => (
+              <ListItem
+                key={todo.id}
+                id={todo.id}
+                title={todo.title}
+                done={todo.done}
+                delHandler={delHandler}
+                doneHandler={doneHandler}
+              />
+            ))}
+        </ul>
+      </div>
+    </span>
   );
 };
 

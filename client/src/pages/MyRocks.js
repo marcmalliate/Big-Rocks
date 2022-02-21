@@ -58,21 +58,23 @@ const MyRocks = () => {
   };
 
   return (
-    <RockLayout>
-      <RockHeader />
-      <RockForm
-        error={error}
-        value={rock}
-        submit={submitHandler}
-        onChange={(e) => setRock(e.target.value)}
-      />
-      <hr className="border-primary" />
-      <RockLists
-        rocks={rocks}
-        delHandler={delHandler}
-        doneHandler={doneHandler}
-      />
-    </RockLayout>
+    <span className="font-link">
+      <RockLayout>
+        <RockHeader />
+        <RockForm
+          error={error}
+          value={rock}
+          submit={submitHandler}
+          onChange={(e) => setRock(e.target.value)}
+        />
+        <hr className="border-primary" />
+        <RockLists
+          rocks={rocks}
+          delHandler={delHandler}
+          doneHandler={doneHandler}
+        />
+      </RockLayout>
+    </span>
   );
 };
 

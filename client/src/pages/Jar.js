@@ -59,17 +59,23 @@ const Jar = () => {
   };
 
   return (
-    <Layout>
-      <Header />
-      <Form
-        error={error}
-        value={todo}
-        submit={submitHandler}
-        onChange={(e) => setTodo(e.target.value)}
-      />
-      <hr className="border-primary" />
-      <Lists todos={todos} delHandler={delHandler} doneHandler={doneHandler} />
-    </Layout>
+    <span className="font-link">
+      <Layout>
+        <Header />
+        <Form
+          error={error}
+          value={todo}
+          submit={submitHandler}
+          onChange={(e) => setTodo(e.target.value)}
+        />
+        <hr className="border-primary" />
+        <Lists
+          todos={todos}
+          delHandler={delHandler}
+          doneHandler={doneHandler}
+        />
+      </Layout>
+    </span>
   );
 };
 

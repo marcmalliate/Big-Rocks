@@ -13,22 +13,24 @@ const RockLists = ({ rocks, delHandler, doneHandler }) => {
   }
 
   return (
-    <div className="listWrap">
-      <ul className="list-group">
-        {rocks &&
-          rocks.length > 0 &&
-          rocks.map((rock) => (
-            <RockListItem
-              key={rock.id}
-              id={rock.id}
-              title={rock.title}
-              done={rock.done}
-              delHandler={delHandler}
-              doneHandler={doneHandler}
-            />
-          ))}
-      </ul>
-    </div>
+    <span className="font-link">
+      <div className="listWrap">
+        <ul className="list-group">
+          {rocks &&
+            rocks.length > 0 &&
+            rocks.map((rock) => (
+              <RockListItem
+                key={rock.id}
+                id={rock.id}
+                title={rock.title}
+                done={rock.done}
+                delHandler={delHandler}
+                doneHandler={doneHandler}
+              />
+            ))}
+        </ul>
+      </div>
+    </span>
   );
 };
 
