@@ -5,7 +5,14 @@
   background-color: whitesmoke;
 }
 
-.m-0 {
+.header {
+  image-rendering: optimizeSpeed;
+  justify-content: left;
+  background-position: center;
+  width: fit-content;
+  height: 10%;
+  min-height: 500%;
+  min-width: 100%;
   color: rgb(248, 242, 189);
 }
 
@@ -19,4 +26,11 @@
 
 .btn.btn-light {
   background-color: rgb(248, 242, 189);
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  min-width: 100%;
 }

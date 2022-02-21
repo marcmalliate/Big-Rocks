@@ -6,6 +6,8 @@ import Lists from "../components/MyJar/Lists";
 
 import { Container } from "react-bootstrap";
 
+import MyRocks from "./MyRocks";
+
 const Jar = () => {
   const [error, setError] = useState(null);
   const [todo, setTodo] = useState("");

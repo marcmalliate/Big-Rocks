@@ -3,23 +3,29 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import Auth from "../../utils/auth";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import image from "../Header/header.png";
 
 const Header = () => {
   const logout = (event) => {
     event.preventDefault();
     Auth.logout();
   };
+
   return (
     <header className="nav-container text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0"> Big Rocks</h1>
+            <div className="header">
+              {" "}
+              <img src={image} alt="Logo" />
+            </div>
           </Link>
           <p className="m-0">
             What are your goals for this year and how can you achieve them?
           </p>
         </div>
+
         <div>
           {Auth.loggedIn() ? (
             <>

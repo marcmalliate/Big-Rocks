@@ -1,5 +1,6 @@
 import React from "react";
 import RockListItem from "./RockListItem";
+import "./RockLists.css";
 
 const RockLists = ({ rocks, delHandler, doneHandler }) => {
   if (rocks.length <= 0) {
