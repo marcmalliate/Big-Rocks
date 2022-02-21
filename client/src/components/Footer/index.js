@@ -5,8 +5,8 @@ const Footer = () => {
   const location = useLocation();
   const history = useHistory();
   return (
-    <span className="font-link">
-      <footer className="w-100 mt-auto bg-secondary p-4">
+    <footer className="w-100 mt-auto bg-secondary p-4">
+      <span className="font-link">
         <div className="container text-center mb-5">
           {location.pathname !== "/" && (
             <button
@@ -18,8 +18,8 @@ const Footer = () => {
           )}
           <h4>Remember, put your Big Rocks in first!</h4>
         </div>
-      </footer>
-    </span>
+      </span>
+    </footer>
   );
 };
 

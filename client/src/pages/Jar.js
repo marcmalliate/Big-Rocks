@@ -3,6 +3,8 @@ import Form from "../components/MyJar/Form";
 import Header from "../components/MyJar/JarHeader";
 import Layout from "../components/MyJar/Layout";
 import Lists from "../components/MyJar/Lists";
+import Auth from "../utils/auth";
+import { Link } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
 
@@ -61,19 +63,32 @@ const Jar = () => {
   return (
     <span className="font-link">
       <Layout>
-        <Header />
-        <Form
-          error={error}
-          value={todo}
-          submit={submitHandler}
-          onChange={(e) => setTodo(e.target.value)}
-        />
-        <hr className="border-primary" />
-        <Lists
-          todos={todos}
-          delHandler={delHandler}
-          doneHandler={doneHandler}
-        />
+        <div>
+          {Auth.loggedIn() ? (
+            <div>
+              <Header />
+              <Form
+                error={error}
+                value={todo}
+                submit={submitHandler}
+                onChange={(e) => setTodo(e.target.value)}
+              />
+              <hr className="border-primary" />
+              <Lists
+                todos={todos}
+                delHandler={delHandler}
+                doneHandler={doneHandler}
+              />
+            </div>
+          ) : (
+            <>
+              <p>
+                You need to be logged in to view your rocks. Please{" "}
+                <Link to="/login">login</Link>
+              </p>
+            </>
+          )}
+        </div>
       </Layout>
     </span>
   );

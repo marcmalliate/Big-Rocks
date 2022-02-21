@@ -4,6 +4,8 @@ import RockHeader from "../components/Rock/RockHeader";
 import RockLayout from "../components/Rock/RockLayout";
 import RockLists from "../components/Rock/RockLists";
 import "./MyRocks.css";
+import Auth from "../utils/auth";
+import { Link } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
 
@@ -61,18 +63,31 @@ const MyRocks = () => {
     <span className="font-link">
       <RockLayout>
         <RockHeader />
-        <RockForm
-          error={error}
-          value={rock}
-          submit={submitHandler}
-          onChange={(e) => setRock(e.target.value)}
-        />
-        <hr className="border-primary" />
-        <RockLists
-          rocks={rocks}
-          delHandler={delHandler}
-          doneHandler={doneHandler}
-        />
+        <div>
+          {Auth.loggedIn() ? (
+            <div>
+              <RockForm
+                error={error}
+                value={rock}
+                submit={submitHandler}
+                onChange={(e) => setRock(e.target.value)}
+              />
+              <hr className="border-primary" />
+              <RockLists
+                rocks={rocks}
+                delHandler={delHandler}
+                doneHandler={doneHandler}
+              />
+            </div>
+          ) : (
+            <>
+              <p>
+                You need to be logged in to view your rocks. Please{" "}
+                <Link to="/login">login</Link>
+              </p>
+            </>
+          )}
+        </div>
       </RockLayout>
     </span>
   );
