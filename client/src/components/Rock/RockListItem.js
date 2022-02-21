@@ -5,7 +5,7 @@ const RockListItem = ({ id, title, delHandler, doneHandler, done }) => {
     <span className="font-link">
       <li
         className={`list-group-item d-flex justify-content-between align-items-center ${
-          done ? "bg-success" : ""
+          done ? "bg-primary" : ""
         }`}
       >
         {done && <del>{title}</del>}
