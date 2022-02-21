@@ -17,7 +17,7 @@
   --bs-purple: #fbf2c8;
   --bs-pink: #fbf2c8;
   --bs-red: #cdad6c;
-  --bs-orange: #fd7e14;
+  --bs-orange: #fbf2c8;
   --bs-yellow: #d47500;
   --bs-green: #3cb521;
   --bs-teal: #20c997;
@@ -37,22 +37,22 @@
   --bs-primary: #fbf2c8;
   --bs-secondary: #999;
   --bs-success: #3cb521;
-  --bs-info: #3399f3;
-  --bs-warning: #d47500;
+  --bs-info: #eee;
+  --bs-warning: #f8f0da;
   --bs-danger: #cdad6c;
   --bs-light: #eee;
   --bs-dark: #333;
-  --bs-primary-rgb: 168, 99, 50;
+  --bs-primary-rgb: 244, 240, 192;
   --bs-secondary-rgb: 246, 244, 217;
   --bs-success-rgb: 60, 181, 33;
-  --bs-info-rgb: 51, 153, 243;
-  --bs-warning-rgb: 212, 117, 0;
-  --bs-danger-rgb: 205, 2, 0;
-  --bs-light-rgb: 238, 238, 238;
+  --bs-info-rgb: 244, 240, 192;
+  --bs-warning-rgb: 244, 240, 192;
+  --bs-danger-rgb: 244, 240, 192;
+  --bs-light-rgb: 244, 240, 192;
   --bs-dark-rgb: 168, 99, 50;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 119, 119, 119;
+  --bs-body-color-rgb: 168, 99, 50;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
@@ -273,7 +273,7 @@ pre code {
 }
 code {
   font-size: 0.875em;
-  color: #e83e8c;
+  color: #c0b2b8;
   word-wrap: break-word;
 }
 a > code {

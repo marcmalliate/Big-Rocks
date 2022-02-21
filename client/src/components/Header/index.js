@@ -31,10 +31,10 @@ const Header = () => {
           <div>
             {Auth.loggedIn() ? (
               <>
-                <Link className="btn btn-lg btn-info m-2" to="/jar">
+                <Link className="btn btn-lg btn-light m-2" to="/jar">
                   My Jar
                 </Link>
-                <Link className="btn btn-lg btn-info m-2" to="/rocks">
+                <Link className="btn btn-lg btn-light m-2" to="/rocks">
                   My Rocks
                 </Link>
                 <span>Hiya, {Auth.getProfile().data.username}!</span>
@@ -48,13 +48,16 @@ const Header = () => {
               </>
             ) : (
               <>
-                <Link className="btn btn-lg btn-info m-2" to="/getinspired">
+                <Link className="btn btn-lg btn-light m-2" to="/getinspired">
                   Get Inspired
                 </Link>
-                <Link className="btn btn-lg btn-info m-2" to="/whatarebigrocks">
+                <Link
+                  className="btn btn-lg btn-light m-2"
+                  to="/whatarebigrocks"
+                >
                   What are Big Rocks?
                 </Link>
-                <Link className="btn btn-lg btn-info m-2" to="/login">
+                <Link className="btn btn-lg btn-light m-2" to="/login">
                   Login
                 </Link>
 
