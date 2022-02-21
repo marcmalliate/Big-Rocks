@@ -18,7 +18,7 @@ const RockForm = ({ error, value, submit, onChange }) => {
             {error && <small className="form-text text-danger">{error}</small>}
           </div>
           <div className="col-7 text-right">
-            <button type="submit" className="btn btn-primary text-center">
+            <button type="submit" className="btn btn-light text-center">
               Add Rock
             </button>
           </div>

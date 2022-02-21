@@ -17,7 +17,7 @@ const Form = ({ error, value, submit, onChange }) => {
             {error && <small className="form-text text-danger">{error}</small>}
           </div>
           <div className="col-7 text-right">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-light">
               Add to Jar
             </button>
           </div>

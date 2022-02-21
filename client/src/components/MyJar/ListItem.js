@@ -12,13 +12,15 @@ const ListItem = ({ id, title, delHandler, doneHandler, done }) => {
         {!done && <>{title}</>}
         <div>
           <button
-            className="btn btn-sm btn-danger mr-2"
+            className="btn btn-sm btn-secondary mr-2"
             onClick={() => delHandler(id)}
           >
             <i className="far fa-trash-alt"></i>
           </button>
           <button
-            className={`btn btn-sm ${done ? "btn-warning" : "btn-success"}`}
+            className={`btn btn-sm btn-light ${
+              done ? "btn-danger" : "btn-success"
+            }`}
             onClick={() => doneHandler(id)}
           >
             {done ? (
