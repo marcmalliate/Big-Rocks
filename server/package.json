@@ -7,7 +7,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon --exec babel -node server.js",
     "watch": "nodemon",
     "seed": "node seeders/seed.js"
   },
